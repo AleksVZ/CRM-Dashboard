@@ -3,17 +3,280 @@
     display: flex;
 
 
+
+
     .wrapper__nav{
+        border: 1px solid black;
         background: #FFFFFF;
-        padding-top: 36px;
-        padding-bottom: 78px;
+        padding: 36px 28px 78px 28px;
         max-width: 306px;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .nav__navigation{
+            .nav__logo{
+                display: flex;
+                align-items: flex-end;
+                margin-bottom: 65px;
+                img{
+                    display: block;
+                    width: 100%;
+                }
+                p{
+                    position: relative;
+                    top: -10px;
+                    left: 4px;
+                }
+            }
+            ul{
+                li{
+                    margin-bottom: 30px;
+                    
+                    :hover{
+                        color:white;
+                        background: #5932EA;
+                        border-radius: 8px;
+                        
+                    }
+                
+
+                    a{
+                        width: 100%;
+                        color: black;
+                        padding: 10px 19px 17px 13px;
+                        box-sizing: border-box;
+                        vertical-align: text-top;
+
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 21px;
+                        letter-spacing: -0.01em;
+                        color: #9197B3;
+
+
+                }
+
+            }
+            li:first-child{
+                position: relative;
+
+                a{
+
+                &:before{
+                    display: inline-block;
+                    background-image: url('../img/item1.svg');
+                    content: "";
+                    background-size: cover;
+                    width:24px;
+                    height: 24px;
+                    margin-right: 16px;
+                    position: relative;
+                    top: 6px;
+
+                }
+
+                }
+
+            }
+            li:nth-child(2){
+                a{
+                    position: relative;
+
+                &:before{
+                    display: inline-block;
+                    background-image: url('../img/Product.svg');
+                    content: "";
+                    background-size: cover;
+                    width:24px;
+                    height: 24px;
+                    margin-right: 16px;
+                    position: relative;
+                    top: 6px;
+
+                }
+                &:after{
+                    display: inline-block;
+                    content: "\f054";
+                    font-weight: 900;
+                    font-family: "Font Awesome 6 Free";
+                    font-size: 9px;
+                    color: #9197B3;
+                    position: absolute;
+                    right: 19px;
+                    top: 20px;
+                    
+                }
+                }
+                a:hover:after{
+                    color: white;
+                }
+            }
+            li:nth-child(3){
+                a{
+                    position: relative;
+                &:before{
+                    display: inline-block;
+                    background-image: url('../img/item2.svg');
+                    content: "";
+                    background-size: cover;
+                    width:24px;
+                    height: 24px;
+                    margin-right: 16px;
+                    position: relative;
+                    top: 6px;
+                }
+                &:after{
+                    display: inline-block;
+                    content: "\f054";
+                    font-weight: 900;
+                    font-family: "Font Awesome 6 Free";
+                    font-size: 9px;
+                    color: #9197B3;
+                    position: absolute;
+                    right: 19px;
+                    top: 20px;
+                    
+                }
+                }
+                a:hover:after{
+                    color: white;
+                }
+            }
+            li:nth-child(4){
+                a{
+                    position: relative;
+                &:before{
+                    display: inline-block;
+                    background-image: url('../img/income.svg');
+                    content: "";
+                    background-size: cover;
+                    width:24px;
+                    height: 24px;
+                    margin-right: 16px;
+                    position: relative;
+                    top: 6px;
+                }
+                &:after{
+                    display: inline-block;
+                    content: "\f054";
+                    font-weight: 900;
+                    font-family: "Font Awesome 6 Free";
+                    font-size: 9px;
+                    color: #9197B3;
+                    position: absolute;
+                    right: 19px;
+                    top: 20px;
+                    
+                }
+                }
+                a:hover:after{
+                    color: white;
+                }
+            }
+            li:nth-child(5){
+                a{
+                    position: relative;
+                &:before{
+                    display: inline-block;
+                    background-image: url('../img/promote.svg');
+                    content: "";
+                    background-size: cover;
+                    width:24px;
+                    height: 24px;
+                    margin-right: 16px;
+                    position: relative;
+                    top: 6px;
+                }
+                &:after{
+                    display: inline-block;
+                    content: "\f054";
+                    font-weight: 900;
+                    font-family: "Font Awesome 6 Free";
+                    font-size: 9px;
+                    color: #9197B3;
+                    position: absolute;
+                    right: 19px;
+                    top: 20px;
+                    
+                }
+                }
+                a:hover:after{
+                    color: white;
+                }
+            }
+            li:nth-child(6){
+                a{
+                    position: relative;
+                &:before{
+                    display: inline-block;
+                    background-image: url('../img/help.svg');
+                    content: "";
+                    background-size: cover;
+                    width:24px;
+                    height: 24px;
+                    margin-right: 16px;
+                    position: relative;
+                    top: 6px;
+                }
+                &:after{
+                    display: inline-block;
+                    content: "\f054";
+                    font-weight: 900;
+                    font-family: "Font Awesome 6 Free";
+                    font-size: 9px;
+                    color: #9197B3;
+                    position: absolute;
+                    right: 19px;
+                    top: 20px;
+                    
+                }
+                }
+                a:hover:after{
+                    color: white;
+                }
+            }
+            }
+        }
+
+
+        .nav__avatar{
+            display: flex;
+
+            .nav__avatar__photo{
+                border-radius: 50%;
+                width: 42px;
+                height: 42px;
+                margin-right: 12px;
+            }
+            .avatar__username{
+                h3{
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 21px;
+                    letter-spacing: 0.01em;
+                    color: #000000;
+                }
+                p{
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 18px;
+                    letter-spacing: 0.01em;
+                    color: #757575;
+                }
+            }
+        }
+
     }
     .wrapper__customers{
+        border: 1px solid black;
+        flex: 1;
+
         background: #F9FBFF;;
         padding-top: 41px;
-        
     }
 }
 
